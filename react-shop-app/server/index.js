@@ -15,7 +15,7 @@ const cookieParser = require("cookie-parser");
 //   .catch(err => console.error(err));
 
 const mongoose = require("mongoose");
-const connect = mongoose.connect("mongodb://127.0.0.1:27017/DB", { useNewUrlParser: true, useUnifiedTopology: true })
+const connect = mongoose.connect("mongodb://127.0.0.1:27017/admin", { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDB Connected...'))
   .catch(err => console.log(err));
 
