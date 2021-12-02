@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "node server/index.js",
-    "backend": "run server/index.js",
+    "backend": "pm2 server/index.js",
     "frontend": "npm run front --prefix client",
     "dev": "concurrently \"npm run backend\" \"npm run start --prefix client\""
   },
